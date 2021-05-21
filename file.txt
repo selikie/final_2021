@@ -8,7 +8,7 @@ FILENAME = "big_data.txt"
 while 1:
 
    # #print("x = {}; y = {}".format(x,y))
-   #This line of code is ignore for now
+  That is wonderful for the developers to underdstand the code. 
     print("x = %d; y = %d" % (x,y))
 
     print("""
@@ -23,10 +23,10 @@ while 1:
 
     options = input("Option: ").upper()
 
-    if o_options == "X":
+    if options == "X":
         x = int(input("Please X values must enter:"))
 
-    elif o_options == "Y":
+    elif options == "Y":
         y = int(input("Please Y value should be enter:"))
 
     elif o_options == "S":
@@ -34,15 +34,6 @@ while 1:
         f.write("{}\n{}\n".format(x,y))
         f.close()
 
-    elif o_options == "L":
+    elif options == "L":
         f = open(FILENAME, "r")
         a = int(f.readline())
-        b = int(f.readline())
-        f.close()
-
-    elif o_options == "Q":
-        break
-
-    else:
-        print("\ninvalid\n")
-This line of code is adding to the file.
