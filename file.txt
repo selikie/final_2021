@@ -1,0 +1,47 @@
+"""
+this example shows how to open a file for text,write and read
+and shows how to parse our data into text and back from text
+"""
+x,y = 0,0
+FILENAME = "big_data.txt"
+
+while 1:
+
+   # #print("x = {}; y = {}".format(x,y))
+   #This line of code is ignore for now
+    print("x = %d; y = %d" % (x,y))
+
+    print("""
+            MENU X&Y
+    set (X)
+    set (Y)
+    (S)ave
+    (L)oad
+    (Q)uit
+
+    """)
+
+    options = input("Option: ").upper()
+
+    if o_options == "X":
+        x = int(input("Please X values must enter:"))
+
+    elif o_options == "Y":
+        y = int(input("Please Y value should be enter:"))
+
+    elif o_options == "S":
+        f = open(FILENAME, "w")
+        f.write("{}\n{}\n".format(x,y))
+        f.close()
+
+    elif o_options == "L":
+        f = open(FILENAME, "r")
+        a = int(f.readline())
+        b = int(f.readline())
+        f.close()
+
+    elif o_options == "Q":
+        break
+
+    else:
+        print("\ninvalid\n")
