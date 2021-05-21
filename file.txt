@@ -8,7 +8,7 @@ FILENAME = "big_data.txt"
 while 1:
 
    # #print("x = {}; y = {}".format(x,y))
-   #This line of code is ignore for now
+   print('What is your code about?)
     print("x = %d; y = %d" % (x,y))
 
     print("""
@@ -23,10 +23,10 @@ while 1:
 
     options = input("Option: ").upper()
 
-    if o_options == "X":
+    if oOptions == "X":
         x = int(input("Please X values must enter:"))
 
-    elif o_options == "Y":
+    elif Ooptions == "Y":
         y = int(input("Please Y value should be enter:"))
 
     elif o_options == "S":
@@ -44,5 +44,4 @@ while 1:
         break
 
     else:
-        print("\ninvalid\n")
-This line of code is adding to the file.
+        print("\ninvalid Ooption\n")
