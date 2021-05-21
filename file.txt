@@ -8,7 +8,7 @@ FILENAME = "big_data.txt"
 while 1:
 
    # #print("x = {}; y = {}".format(x,y))
-  That is wonderful for the developers to underdstand the code. 
+  #That is wonderful for the developers to underdstand the code. 
     print("x = %d; y = %d" % (x,y))
 
     print("""
@@ -27,9 +27,13 @@ while 1:
         x = int(input("Please X values must enter:"))
 
     elif options == "Y":
+    if options == "X":
+        x = int(input("Please X values must enter:"))
+
+    elif options == "Y":
         y = int(input("Please Y value should be enter:"))
 
-    elif o_options == "S":
+    elif options == "S":
         f = open(FILENAME, "w")
         f.write("{}\n{}\n".format(x,y))
         f.close()
@@ -37,3 +41,11 @@ while 1:
     elif options == "L":
         f = open(FILENAME, "r")
         a = int(f.readline())
+        b = int(f.readline())
+        f.close()
+
+    elif options == "Q":
+        break
+
+    else:
+        print("\ninvalid option\n")
